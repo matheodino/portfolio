@@ -1,0 +1,134 @@
+/* Display elements borders
+* {
+    outline: 1px solid;
+}
+*/
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    color: var(--black);
+    background-color: var(--white);
+}
+
+header.main > div.wrap {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header.main section.grow {
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--black);
+}
+
+h1, h2 {
+    font-size: 80px;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--grey);
+}
+
+img {
+    display: block;
+}
+
+li img, p img {
+    display: initial;
+}
+
+/* Colors */
+
+:root {
+    --pink: #FAB8C4;
+    --grey: #999FAE;
+    --blue: #5956E9;
+    --black: #000000;
+    --white: #FFFFFF;
+}
+
+/* Layout */
+
+div.wrap {
+    max-width: 1216px;
+    margin: 0 auto;
+    padding: 0 112px;
+}
+
+div.wrap-min {
+    max-width: 384px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    gap: 24px 32px;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+/* Buttons */
+
+div.buttons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a.cta {
+    border-radius: 8px;
+    color: var(--black);
+    background-color: var(--pink);
+    padding: 24px 40px;
+}
+
+/* Floating */
+
+div.floating {
+    position: absolute;
+    background-size: 100%;
+}
+
+div.ellipse {
+    border: 1px solid var(--black);
+    box-sizing: border-box;
+    border-radius: 100%;
+    opacity: .1;
+    width: 520px;
+    height: 520px;
+}
+
+div.disc {
+    border-radius: 100%;
+    width: 268px;
+    height: 268px;
+    background-color: var(--grey);
+}
+
+/* Emojis */
+
+p img.emoji {
+    height: 18px;
+}

@@ -1,0 +1,62 @@
+footer {
+    padding: 96px 0 56px 0;
+}
+
+footer a {
+    font-weight: normal;
+}
+
+/* Footer menu */
+
+footer nav h4 {
+    margin-bottom: 40px;
+    color: var(--grey);
+}
+
+footer nav div.column {
+    grid-area: auto / span 2;
+}
+
+footer nav div.column:first-child {
+    grid-area: auto / span 3;
+}
+
+footer nav ul li:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+/* Credits */
+
+div.credits {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 136px;
+}
+
+div.credits * {
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--black);
+}
+
+/* Responsive */
+
+@media all and (max-width: 1200px) {
+
+footer {
+    padding: 80px 0 16px 0;
+}
+
+footer nav.grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+    
+footer nav div.column:not(:first-child) {
+    grid-area: auto / span 1; /* Display the logo footer outside of the menu columns */
+}
+
+div.credits {
+    margin-top: 80px;
+}
+
+}

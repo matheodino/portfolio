@@ -1,0 +1,97 @@
+.container {
+    @apply mx-auto;
+}
+
+.grid-3 {
+    @apply grid grid-cols-1 gap-8 mx-auto lg:grid-cols-3;
+}
+
+.reset {
+    @apply text-primary;
+}
+
+a.bottom {
+    @apply before:content-['↓'] before:hover:translate-y-2;
+}
+
+p.bottom {
+    @apply before:content-['↓'];
+}
+
+a.external {
+    @apply before:content-['↗'] before:hover:-translate-y-1 before:hover:translate-x-1;
+}
+
+p.external {
+    @apply before:content-['↗'];
+}
+
+a.external,
+a.bottom {
+    @apply hover:pl-4 before:hover:inline-block before:transition-all before:hover:transition-all;
+}
+
+.external,
+.bottom {
+    @apply transition-all before:mr-4;
+}
+
+#projects {
+
+    a {
+        @apply grid grid-cols-1 gap-8 p-4 mt-0 mb-8 rounded-lg lg:p-8 col-span-full lg:grid-cols-2 lg:col-span-2 hover:bg-ghost-white text-primary even:lg:col-start-2;
+
+        div.image {
+            @apply flex items-center justify-center h-48 p-8 rounded-lg;
+
+            img {
+                @apply max-h-24;
+            }
+        }
+
+        div.infos {
+            h3 {
+                @apply mb-2 text-2xl;
+            }
+
+            ul {
+                @apply flex flex-wrap gap-4 text-sm;
+
+                li {
+                    @apply px-2 py-0.5 font-medium border-2 rounded-lg;
+                }
+            }
+
+            p {
+                @apply m-0 text-2xl transition-all group-hover:translate-x-8 text-action;
+            }
+        }
+
+        &:hover {
+            .bottom {
+                @apply before:translate-y-2;
+            }
+            
+            .external {
+                @apply before:-translate-y-1 before:translate-x-1;
+            }
+
+            .external,
+            .bottom {
+                @apply pl-4 before:inline-block before:transition-all;
+            }
+        }
+    }
+}
+
+.button {
+    @apply inline-flex items-center justify-center px-4 py-2 m-2 text-lg font-medium text-white transition-all rounded-lg bg-action hover:bg-opacity-90 hover:py-4 hover:px-6 hover:m-0;
+
+    img {
+        @apply h-6 ml-4 transition-all;
+    }
+
+    &:hover img {
+        @apply ml-5;
+    }
+}

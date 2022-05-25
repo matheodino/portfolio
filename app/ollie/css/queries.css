@@ -1,0 +1,126 @@
+/* Large devices (1200 and down) */
+@media all and (max-width: 1200px) {
+
+h1, h2 {
+    font-size: 64px;
+}
+
+}
+
+/* Medium devices (992px and down) */
+@media all and (max-width: 992px) {
+
+div.wrap {
+    max-width: 600px;
+    padding: 0 16px;
+}
+
+div.wrap-min {
+    max-width: 100%;
+}
+
+/* --- MAIN HEADER --- */
+
+section.work {
+    padding: 16px 0;
+}
+
+section.work div.flex {
+    flex-direction: column;
+    align-items: center;
+}
+
+section.work div.infos {
+    max-width: 100%;
+    margin-top: 16px;
+}
+
+section.work div.buttons {
+    flex-direction: column;
+    align-items: stretch;
+    margin: 0;
+}
+
+section.work aside.illustration {
+    order: -1; /* Display it at the top of the section */
+    width: 80%;
+    margin: 0;
+}
+
+section.work h1 + p {
+    max-width: 100%;
+}
+
+section.work a.scroll {
+    margin-top: 40px;
+}
+
+/* --- FEATURES --- */
+
+.grid:not(.footer) {
+    display: flex; /* Transform grids to default layout */
+    flex-direction: column;
+    row-gap: 48px;
+    padding: 80px 0;
+}
+
+/* Features titles */
+
+header.titles div.ellipse {
+    top: 32px;
+    left: 75%;
+}
+
+header.titles div.disc.large {
+    display: none;
+}
+
+header.titles div.disc.small {
+    right: 16px;
+    top: 432px;
+    left: inherit;
+}
+
+/* Features infos */
+
+section.features div.infos {
+    padding: 64px 0;
+}
+
+section.features div.infos nav {
+    order: 99; /* Display it at the end of the section */
+}
+
+section.features div.infos div.num {
+    justify-content: center;
+}
+
+section.features div.infos div.arrows {
+    justify-content: center;
+    margin-top: 24px;
+}
+
+}
+
+/* Extra small devices (600px and down) */
+@media only screen and (max-width: 600px) {
+
+h1, h2 {
+    font-size: 36px;
+}
+
+p {
+    font-size: 16px;
+}
+
+}
+
+/* Smallest devices (360px and down) */
+@media only screen and (max-width: 360px) {
+
+.grid {
+    display: flex;
+    flex-direction: column;
+}
+
+}

@@ -1,0 +1,222 @@
+/* --- MAIN HEADER --- */
+
+section.work {
+    padding: 46px 0 40px 0;
+}
+
+section.work div.flex {
+    flex-grow: 1;
+    display: flex;
+}
+
+section.work div.infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 488px;
+}
+
+section.work h1 {
+    margin-bottom: 24px;
+}
+
+section.work h1 + p {
+    max-width: 384px;
+    margin-bottom: 24px;
+}
+
+section.work a.scroll {
+    display: block;
+    font-weight: normal;
+    color: var(--grey);
+    margin-top: 34px;
+}
+
+section.work aside.illustration {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 3.5px 0 1px;
+}
+
+section.work div.hero {
+    z-index: 1;
+    padding-top: calc(71.8728404% - 12px);
+    background: url(../images/hero.png) no-repeat;
+    background-size: 100%;
+    width: 100%;
+    margin-top: 12px;
+}
+
+aside.illustration div.ellipse {
+    padding-top: calc(71.8728404% - 2px);
+    width: 71.8728404%;
+    height: auto;
+}
+
+/* Buttons */
+
+section.work div.buttons {
+    display: flex;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+div.buttons a:nth-child(2) {
+    padding: 24px;
+    color: var(--grey);
+}
+
+div.buttons a.icon img {
+    height: 16px;
+    margin-right: 16px;
+}
+
+/* --- FEATURES --- */
+
+section.features {
+    background-color: var(--black);
+    overflow-x: hidden;
+}
+
+section.features * {
+    color: var(--white);
+}
+
+section.features p, section.features a {
+    opacity: .5;
+}
+
+/* Features header */
+
+section.features header {
+    position: relative;
+    flex-direction: column;
+    row-gap: 24px;
+    padding: 216px 0 104px 0;
+}
+
+section.features header h2 {
+    grid-area: 1 / 4 / auto / span 9;
+}
+
+section.features header h2 + p {
+    grid-area: 2 / 4 / auto / span 5;
+}
+
+section.features header p:first-of-type {
+    grid-area: auto / span 2;
+    font-size: 20px;
+    opacity: 1;
+}
+
+section.features header *:not(.floating) {
+    z-index: 1;
+}
+
+/* Floating images */
+
+section.features div.ellipse {
+    left: 88px;
+    border: 1px solid var(--white);
+    opacity: .3;
+}
+
+section.features div.disc.large {
+    right: 104px;
+    top: 112px;
+}
+
+section.features div.disc.small {
+    width: 80px;
+    height: 80px;
+    left: 0;
+    bottom: 0;
+}
+
+/* Features content */
+
+section.features section.infos {
+    padding: 136px 0 216px 0;
+}
+
+section.infos nav {
+    grid-area: auto / span 4;
+}
+
+section.infos article {
+    grid-area: auto / span 4;
+}
+
+/* One feature */
+
+article.onefeature img {
+    height: 64px;
+    margin-bottom: 32px;
+}
+
+article.onefeature h3, article.onefeature p {
+    margin-bottom: 16px;
+}
+
+article.onefeature p {
+    font-size: 16px;
+}
+
+article.onefeature a:hover {
+    opacity: 1;
+}
+
+/* Slider navigation */
+
+div.num {
+    display: flex;
+    align-items: center;
+}
+
+div.num p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+div.num p:first-of-type {
+    opacity: 1;
+}
+
+div.num p:last-of-type {
+    opacity: .3;
+}
+
+div.num div.sep {
+    height: 1px;
+    width: 40px;
+    margin: 0 26px 1px 32px;
+    background-color: var(--white);
+    color: initial;
+}
+
+div.arrows {
+    display: flex;
+    margin-top: 64px;
+}
+
+div.arrows a {
+    opacity: 1;
+    border: 1px solid rgba(255, 255, 255, .2);
+    padding: 11px;
+    border-radius: 100%;
+    line-height: 16px;
+}
+
+div.arrows a:hover {
+    border-color: var(--blue);
+    background-color: var(--blue);
+}
+
+div.arrows a:first-of-type {
+    margin-right: 17px;
+}

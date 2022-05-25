@@ -1,0 +1,116 @@
+body.signup {
+    overflow: hidden;
+}
+
+section.signup {
+    justify-content: center;
+    margin-bottom: 62px;
+}
+
+section.signup *:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+section.signup h1 {
+    font-size: 48px;
+}
+
+section.signup h1 + p {
+    font-size: 16px;
+}
+
+section.signup a.forgot {
+    display: block;
+    text-align: center;
+    margin-top: 24px;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+/* Buttons */
+
+section.signup div.buttons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 72px;
+    letter-spacing: -0.04em;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+section.signup div.buttons a.extern {
+    border: 1px solid var(--grey);
+    background-color: transparent;
+    color: var(--black);
+}
+
+a.extern img {
+    margin-right: 15px;
+}
+
+/* Floating images */
+
+div.paint {
+    z-index: -1;
+    top: 216px;
+    right: 207px;
+    width: 219px;
+    height: 209.7px;
+    background-image: url(../images/paint.png);
+}
+
+div.cursor {
+    z-index: -1;
+    left: 135px;
+    bottom: 94.86px;
+    width: 152.65px;
+    height: 162.14px;
+    background-image: url(../images/cursor.png);
+}
+
+div.disc {
+    z-index: -2;
+    left: -459px;
+    bottom: -480.5px;
+    width: 800.5px;
+    height: 800.5px;
+    background-color: var(--blue);
+}
+
+/* Responsive */
+
+@media all and (max-width: 1200px) {
+
+section.signup {
+    margin-bottom: 72px;
+    padding: 16px 0;
+}
+
+div.paint {
+    top: -16px;
+    right: -16px;
+    width: calc(219px / 1.5);
+    height: calc(209.7px / 1.5);
+}
+
+div.cursor {
+    left: 32px;
+    bottom: -16px;
+}
+
+div.disc {
+    bottom: -640px;
+}
+    
+}
+
+@media only screen and (max-width: 360px) {
+
+div.floating {
+    display: none;
+}
+    
+}
