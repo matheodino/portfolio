@@ -1,6 +1,6 @@
 module.exports = {
   content: [
-    './app/**/*.php',
+    './docs/**/*.html'
   ],
   theme: {
     container: {
